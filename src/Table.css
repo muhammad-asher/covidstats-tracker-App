@@ -3,6 +3,7 @@
 	overflow: scroll;
 	height: 400px;
 	color: #6a5d5d;
+	background-color: #F9DDA4;
 }
 .table tr {
 	display: flex;
@@ -12,8 +13,6 @@
 	padding: 0.5rem;
 }
 .table tr:nth-of-type(odd) {
-	background-color: #f3f2f8;
+	background-color: #EAF0F1;
 }
-.str {
-	color: red;
-}
+
