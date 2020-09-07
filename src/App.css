@@ -4,9 +4,29 @@
 .app__dropdown {
 	background-color: white;
 }
+body {
+	background-color: lightgrey;
+}
+.app {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 20px;
+}
+@media (max-width: 990px) {
+	.app {
+		flex-direction: column;
+	}
+}
 .app-header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 20px;
+}
+.app-left {
+	flex: 0.9;
+}
+.covid-stats {
+	display: flex;
+	justify-content: space-between;
 }
