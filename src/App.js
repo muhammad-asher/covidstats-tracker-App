@@ -10,11 +10,14 @@ import InfoBox from "./InfoBox";
 import Map from "./Map";
 import Table from "./Table";
 import "./App.css";
+import { sortData } from "./util";
+import LineGraph from "./LineGraph";
 
 function App() {
 	const [countries, setcountries] = useState([]);
 	const [country, setcountry] = useState("worldwide");
 	const [countryInfo, setCountryInfo] = useState({});
+	const [casesType, setCasesType] = useState("cases");
 	const [tableData, setTableData] = useState([]);
 
 	useEffect(() => {
@@ -34,7 +37,10 @@ function App() {
 						name: country.country,
 						value: country.countryInfo.iso2,
 					}));
-					setTableData(data);
+
+					const sortedData = sortData(data);
+
+					setTableData(sortedData);
 					setcountries(countries);
 				});
 		};
@@ -101,7 +107,9 @@ function App() {
 				<CardContent>
 					<h3>Live Cases By Country</h3>
 					<Table countries={tableData} />
+					<br />
 					<h3>WorldWide New Cases</h3>
+					<LineGraph casesType={casesType} />
 				</CardContent>
 			</Card>
 		</div>
