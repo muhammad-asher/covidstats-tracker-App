@@ -4,6 +4,16 @@
 .app__dropdown {
 	background-color: white;
 }
+.app__header > h1 {
+	font-size: 2rem;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.app__header {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+	justify-content: space-between;
+}
 body {
 	background-color: #eaf0f1;
 }
@@ -30,3 +40,21 @@ body {
 	display: flex;
 	justify-content: space-between;
 }
+.app-graph {
+	flex-grow: 1;
+}
+.app-right {
+	display: flex;
+	flex-direction: column;
+}
+.app-right .MuiCardContent-root {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+.app-graphtitle {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
