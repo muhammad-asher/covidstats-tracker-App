@@ -3,7 +3,6 @@
 	overflow: scroll;
 	height: 400px;
 	color: #6a5d5d;
-	background-color: #F9DDA4;
 }
 .table tr {
 	display: flex;
@@ -13,6 +12,16 @@
 	padding: 0.5rem;
 }
 .table tr:nth-of-type(odd) {
-	background-color: #EAF0F1;
+	background-image: linear-gradient(
+		325.8deg,
+		#DAE0E2 15.4%,
+		rgba(255, 255, 255, 1) 53.1%
+	);
 }
-
+.table tr:nth-of-type(even) {
+	background-image: linear-gradient(
+		-325.8deg,
+		#F9DDA4 15.4%,
+		rgba(255, 255, 255, 1) 53.1%
+	);
+}

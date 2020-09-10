@@ -1,7 +1,6 @@
 .infoBox {
 	flex: 1;
 	cursor: pointer;
-	background-color: lightsalmon;
 }
 
 .infoBox:not(:last-child) {
@@ -9,7 +8,12 @@
 }
 
 .infoBox--selected {
-	border-top: 10px solid #0abde3;
+	border-right: 10px solid black;
+	background-image: linear-gradient(
+		232.5deg,
+		#a4b0bd 25%,
+		rgba(245, 246, 252, 1) 62.1%
+	);
 }
 
 .infoBox-cases-cases {
@@ -26,7 +30,7 @@
 }
 
 .infoBox-cases-deaths {
-	color: #E71C23;
+	color: #e71c23;
 	font-weight: 600;
 	font-size: 1.75rem;
 	margin-bottom: 0.5rem;
