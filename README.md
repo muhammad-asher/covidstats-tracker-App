@@ -1,5 +1,9 @@
 Covid Stats Tracker App Link :http://covid_statstracker_m_asher.surge.sh/
 
+
+![COVID STATS TRACKER App](https://user-images.githubusercontent.com/70090506/111915614-02690b00-8a99-11eb-9684-787ddfc7ebda.png)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
